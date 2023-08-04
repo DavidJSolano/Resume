@@ -1,6 +1,6 @@
 # David Solano's Resume
 
-📜[Link to PDF](https://github.com/JustinStitt/resume/blob/master/master_resume.pdf)
+:page_with_curl: [Link to PDF](https://github.com/JustinStitt/resume/blob/master/master_resume.pdf)
 
 ### Use LaTeX to compile
 
