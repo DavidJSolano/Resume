@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : David Solano
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+% Icons
+\newcommand{\phoneicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/phone-icon.png}}}
+\newcommand{\emailicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/email-icon.png}}}
+\newcommand{\linkedinicon}{\raisebox{-0.8ex}{\includegraphics[height=12pt]{icons/linkedin-icon.png}}}
+\newcommand{\githubicon}{\raisebox{-0.8ex}{\includegraphics[height=12pt]{icons/github-icon.png}}}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  {\Huge \scshape David Solano} \\ \vspace{1pt}
+  \small \phoneicon \hspace{1pt}(714)-943-6336 $|$ \emailicon \hspace{1pt} \href{mailto:dsolano7@csu.fullerton.edu}{\underline{dsolano7@csu.fullerton.edu}} $|$ 
+  \href{https://linkedin.com/in/david-solano787}{\linkedinicon} \hspace{1pt} \href{https://linkedin.com/in/david-solano787}{\underline{linkedin.com/in/david-solano787}} $|$
+  \href{https://github.com/DavidJSolano}{\githubicon} \hspace{1pt} \href{https://github.com/DavidJSolano}{\underline{github.com/DavidJSolano}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University, Fullerton}{GPA: 3.91}
+      {Bachelor of Arts in Computer Science, Minor in Economics}{Graduation Date: Dec 2025}
+  \resumeSubHeadingListEnd
+  
+  
+  %-----------EXPERIENCE-----------
+  % -----------Multiple Positions Heading-----------
+  %    \resumeSubSubheading
+  %     {Software Engineer I}{Oct 2014 - Sep 2016}
+  %     \resumeItemListStart
+  %        \resumeItem{Apache Beam}
+  %          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %     \resumeItemListEnd
+  %    \resumeSubHeadingListEnd
+  %-------------------------------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Supplemental Instruction}{June 2023 -- Present}
+      {California State University, Fullerton}{Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Develop comprehensive study materials and interactive presentations to simplify complex C++ concepts, resulting in a 10\% increase in student comprehension and grades.}
+        \resumeItem{Utilize innovative teaching techniques such as hands-on coding exercises and group discussions to foster active learning and student engagement.}
+      \resumeItemListEnd
+      
+
+    \resumeSubheading
+      {Organization President}{May 2023 -- Present}
+      {Association for Computing Machinery, CSUF}{Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Organized and executed 50+ meetings and events for a community of 1,350+ members, resulting in over a 30\% increase in attendance and engagement from previous years.}
+        \resumeItem{Collaborated with board officers to launch an annual hackathon event, attracting over 120 participants and generating \$500+ in sponsorship revenue.}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Path Find} $|$ \emph{React, Typescript, Next.js, TailwindCSS, CSS, HTML, DaisyUI}}{July 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a peer to program and successfully create a highly efficient implementation of Dijkstra's algorithm within the visualizer}
+            \resumeItem{Enhanced the performance of the visualizer by optimizing code structure and implementing efficient data structures, resulting in a 50\% reduction in loading time for large graph simulations.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Weather App} $|$ \emph{OpenWeather API, JavaScript, HTML, CSS, Git}}{Dec 2022 - Jan 2023}
+          \resumeItemListStart
+            \resumeItem{Utilized the OpenWeather API to parse real-time weather data into a user-friendly readable format, providing accurate weather information to users with an average accuracy rate of 99\%.}
+            \resumeItem{Constructed a visually appealing and responsive application using HTML, CSS, and JS, resulting in an enhanced user experience}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Breast Cancer Predictor} $|$ \emph{Google Colabs, pandas, NumPy, Python}}{Oct 2022 - Oct 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented machine learning algorithms to predict the malignancy of cells with an accuracy rate of up to 98.73\%, resulting in more accurate and efficient diagnoses.}
+            \resumeItem{Organized a comprehensive dataset of over 10,000 cell samples to train the ML program, ensuring a robust and reliable predictive model.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+\section{Activities}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {International Collegiate Programming Contest Lead}{May 2023 -- Present}
+      {California State University, Fullerton}{Fullerton, CA}
+      \resumeItemListStart
+        \resumeItem{Led practice workshops for a team of over 40 individuals, improving their algorithmic problem-solving skills.}
+        \resumeItem{Implemented innovative training methods, including hands-on coding exercises, mock competitions, and team-bonding events.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, JavaScript, Typescript, HTML/CSS, Java, Golang} \\
+     \textbf{Frameworks}{: React, Node.js, Flask} \\
+     \textbf{Developer Tools/Technology}{: Git, Shell, GDB, VS Code, Visual Studio, PyCharm} \\
+     \textbf{Libraries}{: pandas, NumPy}
+    }}
+ \end{itemize}
+
+\begin{center}
+  \small \vspace{10pt} \href{https://davidjsolano.vercel.app}{davidjsolano.vercel.app}
+\end{center}
+%-------------------------------------------
+\end{document}
