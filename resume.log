@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  16 AUG 2023 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  20 AUG 2023 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -423,10 +423,10 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D26C36C1AFC892E42A0C9D85BC18EDCB;483.
  ) 
 Here is how much of TeX's memory you used:
- 10724 strings out of 479415
- 170137 string characters out of 5870761
+ 10725 strings out of 479415
+ 170147 string characters out of 5870761
  499121 words of memory out of 5000000
- 28578 multiletter control sequences out of 15000+600000
+ 28579 multiletter control sequences out of 15000+600000
  488866 words of font info for 64 fonts, out of 8000000 for 9000
  428 hyphenation exceptions out of 8191
  60i,11n,63p,304b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
