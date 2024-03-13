@@ -77,6 +77,14 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
+\newcommand{\resumeEduheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#5} \small#6 \\
+    \end{tabular*}\vspace{-7pt}
+}
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
@@ -96,6 +104,7 @@
 \newcommand{\emailicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/email-icon.png}}}
 \newcommand{\linkedinicon}{\raisebox{-0.8ex}{\includegraphics[height=12pt]{icons/linkedin-icon.png}}}
 \newcommand{\githubicon}{\raisebox{-0.8ex}{\includegraphics[height=12pt]{icons/github-icon.png}}}
+\newcommand{\portfolioicon}{\raisebox{-0.6ex}{\includegraphics[height=10pt]{icons/portfolio-icon.png}}}
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -114,26 +123,37 @@
 
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
-\begin{center}
-  {\Huge \scshape David Solano} \\ \vspace{1pt}
-  \small \phoneicon \hspace{1pt}(714)-943-6336 $|$ \emailicon \hspace{1pt} \href{mailto:davidjesolano@gmail.com}{\underline{davidjesolano@gmail.com}} $|$ 
-  \href{https://linkedin.com/in/david-solano787}{\linkedinicon} \hspace{1pt} \href{https://linkedin.com/in/david-solano787}{\underline{linkedin.com/in/david-solano787}} $|$
-  \href{https://github.com/DavidJSolano}{\githubicon} \hspace{1pt} \href{https://github.com/DavidJSolano}{\underline{github.com/DavidJSolano}}
-\end{center}
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {California State University, Fullerton}{GPA: 3.93}
-      {Bachelor of Arts in Computer Science, Minor in Economics}{Graduation Date: May 2025}
-  \resumeSubHeadingListEnd
+  %   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+  %   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+  % \end{tabular*}
   
+  \begin{center}
+    {\Huge \scshape David Solano} \\ \vspace{1pt}
+    \small \phoneicon \hspace{1pt}(714)-943-6336 $|$ \emailicon \hspace{1pt} \href{mailto:davidjesolano@gmail.com}{\underline{davidjesolano@gmail.com}} $|$
+    \href{https://linkedin.com/in/david-solano787}{\linkedinicon} \hspace{1pt} \href{https://linkedin.com/in/david-solano787}{\underline{https://linkedin.com/in/david-solano787}} \\
+    \href{https://github.com/DavidJSolano}{\githubicon} \hspace{1pt} \href{https://github.com/DavidJSolano}{\underline{https://github.com/DavidJSolano}} $|$
+    \portfolioicon \hspace{1pt} \href{https://www.davidsolano.dev}{\underline{https://davidsolano.dev}}
+  \end{center}
+  
+  
+  %-----------EDUCATION-----------
+  \section{Education}
+  \resumeSubHeadingListStart
+  \resumeEduheading
+  {California State University, Fullerton}{GPA: 3.93}
+  {Bachelor of Arts in Computer Science, Minor in Economics}{Graduation Date: May 2026}
+  {Relevant Course Work:} {Software Engineering, Object Oriented Programs, Algorithm Engineering}
+  \resumeSubHeadingListEnd
+  %-----------PROGRAMMING SKILLS-----------
+  \section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: C/C++, Python, JavaScript, Typescript, HTML/CSS, Java, Golang, Intel x86-64 ISA} \\
+      \textbf{Frameworks}{: React, Svelte, Node.js, Flask} \\
+      \textbf{Developer Tools/Technology}{: Git, Shell, GDB, VS Code, Visual Studio, PyCharm} \\
+      \textbf{Libraries}{: pandas, NumPy}
+      }}
+    \end{itemize}
   
   %-----------EXPERIENCE-----------
   % -----------Multiple Positions Heading-----------
@@ -145,80 +165,64 @@
   %     \resumeItemListEnd
   %    \resumeSubHeadingListEnd
   %-------------------------------------------
-\section{Experience}
+  \section{Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+  {Incoming NatSec Software Development Engineer Intern}{May 2024 -- Aug 2024}
+  {Amazon Web Services}{Arlington, VA}
 
-    \resumeSubheading
-      {Computer Science Supplemental Instructor}{June 2023 -- Present}
-      {California State University, Fullerton}{Fullerton, CA}
-      \resumeItemListStart
-        \resumeItem{Develop comprehensive study materials and interactive presentations to simplify complex C++ concepts, resulting in a 10\% increase in student comprehension and grades.}
-        \resumeItem{Utilize innovative teaching techniques such as hands-on coding exercises and group discussions to foster active learning and student engagement.}
-      \resumeItemListEnd
-
+  \resumeSubheading
+  {Computer Science Supplemental Instructor}{June 2023 -- Present}
+  {California State University, Fullerton}{Fullerton, CA}
+  \resumeItemListStart
+  \resumeItem{Develop comprehensive study materials and interactive presentations to simplify complex C++ concepts, resulting in a 10\% increase in student comprehension and grades.}
+  \resumeItem{Utilize innovative teaching techniques such as hands-on coding exercises and group discussions to foster active learning and student engagement.}
+  \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Path Find} $|$ \emph{React, Typescript, Next.js, TailwindCSS, CSS, HTML, DaisyUI}}{July 2023 -- Present}
-          \resumeItemListStart
-            \resumeItem{Collaborated with a peer to program and successfully create a highly efficient implementation of Dijkstra's algorithm within the visualizer.}
-            \resumeItem{Enhanced the performance of the visualizer by optimizing code structure and implementing efficient data structures, resulting in a 50\% reduction in loading time for large graph simulations.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Weather App} $|$ \emph{OpenWeather API, JavaScript, HTML, CSS, Git}}{Dec 2022 - Jan 2023}
-          \resumeItemListStart
-            \resumeItem{Utilized the OpenWeather API to parse real-time weather data into a user-friendly readable format, providing accurate weather information to users with an average accuracy rate of 99\%.}
-            \resumeItem{Constructed a visually appealing and responsive application using HTML, CSS, and JS, resulting in an enhanced user experience.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-
-%
-\section{Leadership and Professional Development}
+  %-----------PROJECTS-----------
+  \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Software Engineering Career Prep Fellow}{Dec 2023 -- Present}
-      {Management Leadership for Tomorrow}{Remote}
-      \resumeItemListStart
-        \resumeItem{Collaborate with experienced coaches to create innovative methodologies for career development, resulting in an improvement in skill acquisition and knowledge retention.}
-        \resumeItem{Attend a series of seminars featuring skill-building workshops, case studies, industry panels, and networking sessions, in order to gain insights and skills to secure high-trajectory internships and jobs.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Organization President}{May 2023 -- Present}
-      {Association for Computing Machinery, CSUF}{Fullerton, CA}
-      \resumeItemListStart
-        \resumeItem{Organize and execute 50+ meetings and events for a community of 1,950+ members, resulting in over a 40\% increase in attendance and engagement from previous years.}
-        \resumeItem{Collaborate with board officers to launch an annual hackathon event, attracting over 120 participants and generating \$5000+ in sponsorship revenue.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {International Collegiate Programming Contest Lead}{May 2023 -- Present}
-      {California State University, Fullerton}{Fullerton, CA}
-      \resumeItemListStart
-        \resumeItem{Led practice workshops for a team of over 40 individuals, improving their algorithmic problem-solving skills.}
-        \resumeItem{Implemented innovative training methods, including hands-on coding exercises, mock competitions, and team-bonding events.}
-      \resumeItemListEnd
-
+  \resumeProjectHeading
+  {\textbf{Path Find} $|$ \emph{React, Typescript, Next.js, TailwindCSS, CSS, HTML, DaisyUI}}{}
+  \resumeItemListStart
+  \resumeItem{Collaborated with a peer to program and successfully create a highly efficient implementation of Dijkstra's algorithm within the visualizer.}
+  \resumeItem{Enhanced the performance of the visualizer by optimizing code structure and implementing efficient data structures, resulting in a 50\% reduction in loading time for large graph simulations.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+  {\textbf{Weather App} $|$ \emph{OpenWeather API, JavaScript, HTML, CSS, Git}}{}
+  \resumeItemListStart
+  \resumeItem{Utilized the OpenWeather API to parse real-time weather data into a user-friendly readable format, providing accurate weather information to users with an average accuracy rate of 99\%.}
+  \resumeItem{Constructed a visually appealing and responsive web application using HTML5, CSS, and JavaScript, resulting in an enhanced user experience.}
+  \resumeItemListEnd
   \resumeSubHeadingListEnd
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C/C++, Python, JavaScript, Typescript, HTML/CSS, Java, Golang, Intel x86-64 ISA} \\
-     \textbf{Frameworks}{: React, Svelte, Node.js, Flask} \\
-     \textbf{Developer Tools/Technology}{: Git, Shell, GDB, VS Code, Visual Studio, PyCharm} \\
-     \textbf{Libraries}{: pandas, NumPy}
-    }}
- \end{itemize}
-
-\begin{center}
-  \small \vspace{10pt} \href{https://www.davidsolano.dev}{davidsolano.dev}
-\end{center}
-%-------------------------------------------
-\end{document}
+  
+  %-----------Leadership and Development-----------
+  \section{Leadership and Professional Development}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Software Engineering Career Prep Fellow}{Dec 2023 -- Present}
+  {Management Leadership for Tomorrow}{Remote}
+  \resumeItemListStart
+  \resumeItem{Collaborate with experienced coaches to create innovative methodologies for career development, resulting in an improvement in skill acquisition and knowledge retention.}
+  \resumeItem{Attend a series of seminars featuring skill-building workshops, case studies, industry panels, and networking sessions, in order to gain insights and skills to secure high-trajectory internships and jobs.}
+  \resumeItemListEnd
+  
+  \resumeSubheading
+  {Organization President}{May 2023 -- Present}
+  {Association for Computing Machinery, CSUF}{Fullerton, CA}
+  \resumeItemListStart
+  \resumeItem{Organize and execute 50+ meetings and events for a community of 1,950+ members, resulting in over a 40\% increase in attendance and engagement from previous years.}
+  \resumeItem{Collaborate with board officers to launch an annual hackathon event, attracting over 120 participants and generating \$5000+ in sponsorship revenue.}
+  \resumeItemListEnd
+  
+  \resumeSubheading
+  {International Collegiate Programming Contest Lead}{May 2023 -- Present}
+  {California State University, Fullerton}{Fullerton, CA}
+  \resumeItemListStart
+  \resumeItem{Led practice workshops for a team of over 40 individuals, improving their algorithmic problem-solving skills.}
+  \resumeItem{Implemented innovative training methods, including hands-on coding exercises, mock competitions, and team-bonding events.}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+  %-------------------------------------------
+  \end{document}
